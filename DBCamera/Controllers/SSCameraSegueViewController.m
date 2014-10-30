@@ -61,7 +61,7 @@ static NSString *SSCaptionText = @"Add a caption for this picture?";
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView {
     if ([textView.text isEqualToString:SSCaptionText]) {
         textView.text = @"";
-        textView.textColor = [UIColor blackColor];
+        textView.textColor = [UIColor whiteColor];
         
     }
     
