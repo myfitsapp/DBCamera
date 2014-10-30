@@ -10,7 +10,7 @@
 #import "DBLibraryManager.h"
 #import "DBCollectionViewCell.h"
 #import "DBCollectionViewFlowLayout.h"
-#import "DBCameraSegueViewController.h"
+#import "SSCameraSegueViewController.h"
 #import "DBCameraCollectionViewController.h"
 #import "DBCameraMacros.h"
 #import "DBCameraLoadingView.h"
@@ -344,7 +344,7 @@ NSLocalizedStringFromTable(key, @"DBCamera", nil)
                 if ( [weakSelf.delegate respondsToSelector:@selector(camera:didFinishWithImage:withMetadata:)] )
                     [weakSelf.delegate camera:self didFinishWithImage:image withMetadata:metadata];
             } else {
-                DBCameraSegueViewController *segue = [[DBCameraSegueViewController alloc] initWithImage:image thumb:[UIImage imageWithCGImage:[asset aspectRatioThumbnail]]];
+                SSCameraSegueViewController *segue = [[SSCameraSegueViewController alloc] initWithImage:image thumb:[UIImage imageWithCGImage:[asset aspectRatioThumbnail]]];
                 [segue setTintColor:self.tintColor];
                 [segue setSelectedTintColor:self.selectedTintColor];
                 [segue setForceQuadCrop:_forceQuadCrop];

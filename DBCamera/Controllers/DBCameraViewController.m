@@ -11,7 +11,7 @@
 #import "DBCameraView.h"
 #import "DBCameraGridView.h"
 #import "DBCameraDelegate.h"
-#import "DBCameraSegueViewController.h"
+#import "SSCameraSegueViewController.h"
 #import "DBCameraLibraryViewController.h"
 #import "DBLibraryManager.h"
 #import "DBMotionManager.h"
@@ -278,7 +278,7 @@ NSLocalizedStringFromTable(key, @"DBCamera", nil)
             newH = ( newW * image.size.height ) / image.size.width;
         }
 
-        DBCameraSegueViewController *segue = [[DBCameraSegueViewController alloc] initWithImage:image thumb:[UIImage returnImage:image withSize:(CGSize){ newW, newH }]];
+        SSCameraSegueViewController *segue = [[SSCameraSegueViewController alloc] initWithImage:image thumb:[UIImage returnImage:image withSize:(CGSize){ newW, newH }]];
         [segue setTintColor:self.tintColor];
         [segue setSelectedTintColor:self.selectedTintColor];
         [segue setForceQuadCrop:_forceQuadCrop];
