@@ -248,6 +248,8 @@ typedef void (^TableRowBlock)();
     [self.navigationController pushViewController:detail animated:NO];
     [cameraViewController restoreFullScreenMode];
     [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"%@", metadata);
+    
 }
 
 @end

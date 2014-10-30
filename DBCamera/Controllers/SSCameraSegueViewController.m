@@ -12,6 +12,9 @@ static NSString *SSCaptionText = @"Add a caption for this picture?";
 
 @interface SSCameraSegueViewController () <UITextViewDelegate>
 
+- (void)saveImageWithMetaData;
+- (BOOL)addCaption;
+
 @end
 
 @implementation SSCameraSegueViewController
@@ -44,8 +47,22 @@ static NSString *SSCaptionText = @"Add a caption for this picture?";
     self.textView.textColor = [UIColor whiteColor];
     self.textView.autocapitalizationType = UITextAutocapitalizationTypeNone;
     self.textView.autocorrectionType = UITextAutocorrectionTypeNo;
-    
+    self.textView.font = [UIFont boldSystemFontOfSize:12.0];
+
     [self.view addSubview:self.textView];
+    
+    UIButton *saveButton = [self valueForKey:@"useButton"];
+    
+    if (saveButton) {
+        [saveButton removeTarget:self
+                          action:NSSelectorFromString(@"saveImage")
+                forControlEvents:UIControlEventTouchUpInside];
+        
+        [saveButton addTarget:self
+                       action:@selector(saveImageWithMetaData)
+             forControlEvents:UIControlEventTouchUpInside];
+        
+    }
     
 }
 
@@ -54,6 +71,25 @@ static NSString *SSCaptionText = @"Add a caption for this picture?";
 - (void)endTextEditing {
     [self.textView resignFirstResponder];
     
+}
+
+- (void)saveImageWithMetaData {
+    [self addCaption];
+    [self performSelector:NSSelectorFromString(@"saveImage")];
+    
+}
+
+- (BOOL)addCaption {
+    if (self.textView.text.length > 1 && ![self.textView.text isEqualToString:SSCaptionText]) {
+        NSMutableDictionary *metaData = [NSMutableDictionary dictionaryWithDictionary:self.capturedImageMetadata];
+        [metaData setValue:self.textView.text forKey:@"SSCaption"];
+     
+        self.capturedImageMetadata = metaData;
+        
+        return YES;
+    }
+    
+    return NO;
 }
 
 
@@ -83,11 +119,7 @@ static NSString *SSCaptionText = @"Add a caption for this picture?";
     [self.imageView removeGestureRecognizer:self.imageView.gestureRecognizers.firstObject];
     [self.view removeGestureRecognizer:self.view.gestureRecognizers.firstObject];
     
-    if (textView.text.length > 1) {
-        NSMutableDictionary *metaData = [NSMutableDictionary dictionaryWithDictionary:self.capturedImageMetadata];
-        [metaData setValue:textView.text forKey:@"SSCaption"];
-
-    }
+    [self addCaption];
         
 }
 
