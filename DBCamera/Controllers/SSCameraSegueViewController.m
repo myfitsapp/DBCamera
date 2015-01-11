@@ -75,8 +75,12 @@ static NSString *SSCaptionText = @"Add a caption for this picture?";
 
 - (void)saveImageWithMetaData {
     [self addCaption];
-    [self performSelector:NSSelectorFromString(@"saveImage")];
     
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+    [self performSelector:NSSelectorFromString(@"saveImage")];
+#pragma clang diagnostic pop
+
 }
 
 - (BOOL)addCaption {
