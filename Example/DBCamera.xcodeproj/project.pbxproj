@@ -56,6 +56,7 @@
 		9AB597C7189BAF9A001BCAD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AB597C5189BAF9A001BCAD3 /* InfoPlist.strings */; };
 		9AB597C9189BAF9A001BCAD3 /* DBCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB597C8189BAF9A001BCAD3 /* DBCameraTests.m */; };
 		9ABB69A219587983007E2B9E /* UIImage+Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABB69A119587983007E2B9E /* UIImage+Asset.m */; };
+		D53132AE1A630E0D0087A88E /* SSCameraSegueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53132AD1A630E0D0087A88E /* SSCameraSegueViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +166,8 @@
 		9ABDB6E5195391A500A1539D /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/DBCamera.strings; sourceTree = "<group>"; };
 		9ABDB6E6195391A500A1539D /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9ABDB6E7195391A500A1539D /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D53132AC1A630E0D0087A88E /* SSCameraSegueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSCameraSegueViewController.h; path = ../DBCamera/Controllers/SSCameraSegueViewController.h; sourceTree = "<group>"; };
+		D53132AD1A630E0D0087A88E /* SSCameraSegueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSCameraSegueViewController.m; path = ../DBCamera/Controllers/SSCameraSegueViewController.m; sourceTree = "<group>"; };
 		F9DFA4FE58E901A1BE1FE253 /* Pods-DBCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBCamera/Pods-DBCamera.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -355,6 +358,8 @@
 		9AB59797189BAF9A001BCAD3 = {
 			isa = PBXGroup;
 			children = (
+				D53132AC1A630E0D0087A88E /* SSCameraSegueViewController.h */,
+				D53132AD1A630E0D0087A88E /* SSCameraSegueViewController.m */,
 				9AB597A9189BAF9A001BCAD3 /* DBCamera */,
 				9AB597C2189BAF9A001BCAD3 /* DBCameraTests */,
 				9AB597A2189BAF9A001BCAD3 /* Frameworks */,
@@ -609,6 +614,7 @@
 				9A2237F719894BAC0084BFD7 /* DBMotionManager.m in Sources */,
 				9ABB69A219587983007E2B9E /* UIImage+Asset.m in Sources */,
 				9AB597B0189BAF9A001BCAD3 /* main.m in Sources */,
+				D53132AE1A630E0D0087A88E /* SSCameraSegueViewController.m in Sources */,
 				9A1F4A8A191C20CB0084C305 /* DBCameraCropView.m in Sources */,
 				6594EE121955F19600E22EBD /* RootViewController.m in Sources */,
 				9A1F4A81191C20CB0084C305 /* DBCameraCollectionViewController.m in Sources */,
