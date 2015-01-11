@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		189DC46C1A4DD02A005F686B /* GrayscaleContrastFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DC46B1A4DD02A005F686B /* GrayscaleContrastFilter.m */; };
+		189DC46E1A4DD1FD005F686B /* Vignette.acv in Resources */ = {isa = PBXBuildFile; fileRef = 189DC46D1A4DD1FD005F686B /* Vignette.acv */; };
 		653E218619474DA2001433A5 /* UIViewController+UIViewController_FullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 653E218519474DA2001433A5 /* UIViewController+UIViewController_FullScreen.m */; };
 		6548431C1958236B0008F803 /* DBCameraLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6548431B1958236B0008F803 /* DBCameraLoadingView.m */; };
 		655AA2B01955FA350017C143 /* CustomCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 655AA2AF1955FA350017C143 /* CustomCamera.m */; };
@@ -54,7 +56,6 @@
 		9AB597C7189BAF9A001BCAD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AB597C5189BAF9A001BCAD3 /* InfoPlist.strings */; };
 		9AB597C9189BAF9A001BCAD3 /* DBCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB597C8189BAF9A001BCAD3 /* DBCameraTests.m */; };
 		9ABB69A219587983007E2B9E /* UIImage+Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABB69A119587983007E2B9E /* UIImage+Asset.m */; };
-		D5E814DF1A02E935002AFFD5 /* SSCameraSegueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E814DD1A02E935002AFFD5 /* SSCameraSegueViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +69,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F48AB91D9A1D7DBB9F411BB /* Pods-DBCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBCamera/Pods-DBCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		1809A13D1A3F79560089855F /* sv-SE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "sv-SE"; path = "sv-SE.lproj/DBCamera.strings"; sourceTree = "<group>"; };
+		1809A13E1A3F79560089855F /* sv-SE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "sv-SE"; path = "sv-SE.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		1809A13F1A3F79560089855F /* sv-SE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "sv-SE"; path = "sv-SE.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		189DC46A1A4DD02A005F686B /* GrayscaleContrastFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayscaleContrastFilter.h; sourceTree = "<group>"; };
+		189DC46B1A4DD02A005F686B /* GrayscaleContrastFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayscaleContrastFilter.m; sourceTree = "<group>"; };
+		189DC46D1A4DD1FD005F686B /* Vignette.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Vignette.acv; sourceTree = "<group>"; };
 		4BE3F8BFBAFD401181A3E55F /* libPods-DBCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DBCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD22A93BC5AAC7ACFAE4C92 /* Pods-DBCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBCamera/Pods-DBCamera.debug.xcconfig"; sourceTree = "<group>"; };
 		653E218419474DA2001433A5 /* UIViewController+UIViewController_FullScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UIViewController_FullScreen.h"; sourceTree = "<group>"; };
 		653E218519474DA2001433A5 /* UIViewController+UIViewController_FullScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UIViewController_FullScreen.m"; sourceTree = "<group>"; };
 		6548431A1958236B0008F803 /* DBCameraLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraLoadingView.h; sourceTree = "<group>"; };
@@ -158,9 +165,7 @@
 		9ABDB6E5195391A500A1539D /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/DBCamera.strings; sourceTree = "<group>"; };
 		9ABDB6E6195391A500A1539D /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9ABDB6E7195391A500A1539D /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D5E814DD1A02E935002AFFD5 /* SSCameraSegueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSCameraSegueViewController.m; path = ../../DBCamera/Controllers/SSCameraSegueViewController.m; sourceTree = "<group>"; };
-		D5E814DE1A02E935002AFFD5 /* SSCameraSegueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSCameraSegueViewController.h; path = ../../DBCamera/Controllers/SSCameraSegueViewController.h; sourceTree = "<group>"; };
-		EA64E7F00EEE5245658B92F0 /* Pods-DBCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBCamera/Pods-DBCamera.release.xcconfig"; sourceTree = "<group>"; };
+		F9DFA4FE58E901A1BE1FE253 /* Pods-DBCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBCamera/Pods-DBCamera.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,9 +196,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		133A9F66B295E54D6A03396E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CD22A93BC5AAC7ACFAE4C92 /* Pods-DBCamera.debug.xcconfig */,
+				F9DFA4FE58E901A1BE1FE253 /* Pods-DBCamera.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		655AA2C31955FFC40017C143 /* Filters */ = {
 			isa = PBXGroup;
 			children = (
+				189DC46A1A4DD02A005F686B /* GrayscaleContrastFilter.h */,
+				189DC46B1A4DD02A005F686B /* GrayscaleContrastFilter.m */,
 				655AA2D319564F250017C143 /* Curves */,
 			);
 			name = Filters;
@@ -203,6 +219,7 @@
 		655AA2D319564F250017C143 /* Curves */ = {
 			isa = PBXGroup;
 			children = (
+				189DC46D1A4DD1FD005F686B /* Vignette.acv */,
 				655AA2C41955FFC40017C143 /* 1977.acv */,
 				655AA2C6195602340017C143 /* amaro.acv */,
 				655AA2C7195602340017C143 /* Hudson.acv */,
@@ -223,15 +240,6 @@
 				6594EE111955F19600E22EBD /* RootViewController.m */,
 			);
 			name = Classes;
-			sourceTree = "<group>";
-		};
-		7BFB8AB690D2105DF8D8EEE5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0F48AB91D9A1D7DBB9F411BB /* Pods-DBCamera.debug.xcconfig */,
-				EA64E7F00EEE5245658B92F0 /* Pods-DBCamera.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		9A1F4A5A191C20CB0084C305 /* Categories */ = {
@@ -351,7 +359,7 @@
 				9AB597C2189BAF9A001BCAD3 /* DBCameraTests */,
 				9AB597A2189BAF9A001BCAD3 /* Frameworks */,
 				9AB597A1189BAF9A001BCAD3 /* Products */,
-				7BFB8AB690D2105DF8D8EEE5 /* Pods */,
+				133A9F66B295E54D6A03396E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -382,8 +390,6 @@
 		9AB597A9189BAF9A001BCAD3 /* DBCamera */ = {
 			isa = PBXGroup;
 			children = (
-				D5E814DE1A02E935002AFFD5 /* SSCameraSegueViewController.h */,
-				D5E814DD1A02E935002AFFD5 /* SSCameraSegueViewController.m */,
 				9AB597B2189BAF9A001BCAD3 /* AppDelegate.h */,
 				9AB597B3189BAF9A001BCAD3 /* AppDelegate.m */,
 				655AA2D41956DB860017C143 /* Classes */,
@@ -487,6 +493,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "PSSD - Daniele Bogo";
 				TargetAttributes = {
+					9AB5979F189BAF9A001BCAD3 = {
+						DevelopmentTeam = Q3SKDBM9PM;
+					};
 					9AB597BA189BAF9A001BCAD3 = {
 						TestTargetID = 9AB5979F189BAF9A001BCAD3;
 					};
@@ -502,6 +511,7 @@
 				es,
 				pt,
 				tr,
+				"sv-SE",
 			);
 			mainGroup = 9AB59797189BAF9A001BCAD3;
 			productRefGroup = 9AB597A1189BAF9A001BCAD3 /* Products */;
@@ -520,6 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				655AA2C51955FFC40017C143 /* 1977.acv in Resources */,
+				189DC46E1A4DD1FD005F686B /* Vignette.acv in Resources */,
 				655AA2D61956DBD90017C143 /* AppResources.xcassets in Resources */,
 				9A50C7B018AA432200CD2DF3 /* DBCamera.strings in Resources */,
 				655AA2C21955FB040017C143 /* DBCameraImages.xcassets in Resources */,
@@ -581,7 +592,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A1F4A87191C20CB0084C305 /* DBLibraryManager.m in Sources */,
-				D5E814DF1A02E935002AFFD5 /* SSCameraSegueViewController.m in Sources */,
+				189DC46C1A4DD02A005F686B /* GrayscaleContrastFilter.m in Sources */,
 				9A1F4A8B191C20CB0084C305 /* DBCameraGridView.m in Sources */,
 				9A1F4A83191C20CB0084C305 /* DBCameraLibraryViewController.m in Sources */,
 				9A1F4A88191C20CB0084C305 /* DBCollectionViewCell.m in Sources */,
@@ -636,6 +647,7 @@
 				9A50C7B418AA435500CD2DF3 /* es */,
 				9A0FAE53193E840D008D5FAD /* pt */,
 				9ABDB6E5195391A500A1539D /* tr */,
+				1809A13D1A3F79560089855F /* sv-SE */,
 			);
 			name = DBCamera.strings;
 			path = ../../DBCamera/Localizations;
@@ -649,6 +661,7 @@
 				9A50C7AC18AA42C300CD2DF3 /* es */,
 				9A0FAE54193E840D008D5FAD /* pt */,
 				9ABDB6E6195391A500A1539D /* tr */,
+				1809A13E1A3F79560089855F /* sv-SE */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -661,6 +674,7 @@
 				9A50C7AD18AA42C300CD2DF3 /* es */,
 				9A0FAE55193E840D008D5FAD /* pt */,
 				9ABDB6E7195391A500A1539D /* tr */,
+				1809A13F1A3F79560089855F /* sv-SE */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -684,7 +698,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -727,7 +741,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -749,18 +763,18 @@
 		};
 		9AB597CD189BAF9A001BCAD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F48AB91D9A1D7DBB9F411BB /* Pods-DBCamera.debug.xcconfig */;
+			baseConfigurationReference = 4CD22A93BC5AAC7ACFAE4C92 /* Pods-DBCamera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBCamera/DBCamera-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/DBCamera/DBCamera-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b3c367c8-be5e-4cf6-9709-ccde4b421dfa";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -768,18 +782,18 @@
 		};
 		9AB597CE189BAF9A001BCAD3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA64E7F00EEE5245658B92F0 /* Pods-DBCamera.release.xcconfig */;
+			baseConfigurationReference = F9DFA4FE58E901A1BE1FE253 /* Pods-DBCamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBCamera/DBCamera-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/DBCamera/DBCamera-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b3c367c8-be5e-4cf6-9709-ccde4b421dfa";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
