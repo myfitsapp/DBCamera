@@ -41,10 +41,12 @@ static NSString *SSCaptionText = @"Add a caption for this picture?";
                                                                  45)
                                         textContainer:nil];
     
-    self.textView.backgroundColor = [UIColor darkGrayColor];
+    self.textView.backgroundColor = [UIColor colorWithRed:51.0/255 green:51.0/255 blue:51.0/255 alpha:1];
     self.textView.text = SSCaptionText;
     self.textView.delegate = self;
-    self.textView.textColor = [UIColor whiteColor];
+    
+    self.textView.textColor = [UIColor colorWithRed:191.0/255 green:159.0/255 blue:98.0/255 alpha:1];
+    
     self.textView.autocapitalizationType = UITextAutocapitalizationTypeNone;
     self.textView.autocorrectionType = UITextAutocorrectionTypeNo;
     self.textView.font = [UIFont boldSystemFontOfSize:12.0];
@@ -101,7 +103,7 @@ static NSString *SSCaptionText = @"Add a caption for this picture?";
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView {
     if ([textView.text isEqualToString:SSCaptionText]) {
         textView.text = @"";
-        textView.textColor = [UIColor whiteColor];
+        textView.textColor = [UIColor colorWithRed:191.0/255 green:159.0/255 blue:98.0/255 alpha:1];
         
     }
     
